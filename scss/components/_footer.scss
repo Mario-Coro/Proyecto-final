@@ -1,0 +1,16 @@
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+
+    .social__media p{
+        color: white
+        }
+        .social__media a img {
+            width: 55px;
+            height: auto;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+  }

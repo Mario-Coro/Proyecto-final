@@ -1,0 +1,25 @@
+.characters__title {
+    text-align: center;
+    font-family: "magic";
+    color: black;
+    font-size: 60px;
+    padding-bottom: 15px;
+    /* padding-top: 15px; */
+    align-items: center;
+}
+
+.characters__container-card {
+    border: 8px solid black;
+}
+
+.characters__container-card div h5 {
+    font-family: "magic";
+    font-size: 50px;
+    text-align: center;
+}
+
+.characters__container-card div p {
+    font-family: 'koulen';
+    font-size: 20px;
+    text-align: center;
+}
