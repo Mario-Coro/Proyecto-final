@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "magic";
+  src: url(../../fonts/HARRYP__.TTF);
+}
 .author__container {
   background-color: #dfdfde;
 }
@@ -15,4 +19,17 @@
 .author__container-info p {
   font-family: 'koulen';
   font-size: 20px;
+}
+
+@media only screen and (max-width: 450px) {
+  .author__container-info h1{
+    font-size: 42px;
+  }
+.author__container-info p{
+  font-size: 18px;
+}
+
+  .author__container-info-p2{
+    display: none;
+  }
 }

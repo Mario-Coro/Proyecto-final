@@ -23,3 +23,18 @@
     font-size: 60px;
     padding-top: 20px;
   }
+
+  @media only screen and (max-width: 450px) {
+    .grid__container{
+      grid-template-columns: 1fr;
+      grid-auto-rows: 1fr;
+    }
+
+    .grid__container div img{
+      width: 300px;
+    }
+
+    .gallery__title{
+      font-size: 50px;
+    }
+  }

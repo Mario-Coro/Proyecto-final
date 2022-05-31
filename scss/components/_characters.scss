@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "magic";
+    src: url(../../fonts/HARRYP__.TTF);
+  }
 .characters__title {
     text-align: center;
     font-family: "magic";
@@ -22,4 +26,14 @@
     font-family: 'koulen';
     font-size: 20px;
     text-align: center;
+}
+
+@media only screen and (max-width: 450px) {
+    .characters__container-card div h5 {
+        font-size: 40px;
+      }
+    
+      .characters__container-card div p{
+        font-size: 18px;
+      } 
 }

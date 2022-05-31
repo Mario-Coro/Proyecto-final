@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "magic";
+  src: url(../../fonts/HARRYP__.TTF);
+}
+
 .books__title {
   text-align: center;
   font-family: "magic";
@@ -36,4 +41,28 @@
   padding-left: 20px;
   color: black;
   font-family: 'koulen';
+}
+
+@media only screen and (max-width: 450px) {
+  .book__img {
+    width: 200px;
+   
+  }
+  .book__container-info {
+    flex-direction: column;
+  }
+
+  .book__text{
+    width: 100%;
+  }
+
+  .book__text p{
+    padding-left: none;
+    font-size: 18px;
+  }
+
+  .book__text h2{
+   padding-top: 7px;
+   font-size: 39px;
+  }
 }

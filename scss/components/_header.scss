@@ -1,51 +1,59 @@
-header {
-    background-image: url(..//images/HP1_Platform_nine_spread.jpg);
-    height: 748px;
+.header__index {
+  background-image: url(..//images/HP1_Platform_nine_spread.jpg);
+  height: 748px;
 }
-    .header__title {
-        font-size: 70px;
-        font-family: "magic";
-        text-decoration: none;
-        color: black;
-      }
-      
-      @font-face {
-        font-family: "magic";
-        src: url(../../fonts/HARRYP__.TTF);
-      }
-      
-      .nav__menu ul li {
-        padding-left: 7px;
-      }
-      .nav__menu ul li a {
-        font-size: 40px;
-        text-decoration: none;
-        color: black;
-        font-family: "magic";
-      }
+
+header {
+  background-color: #932B77;
+}
+
+.header__title {   
+  font-size: 70px;
+  font-family: "magic";
+  text-decoration: none;
+  color: black;
+}
+
+@font-face {
+  font-family: "magic";
+  src: url(../../fonts/HARRYP__.TTF);
+}
+
+.nav__menu ul li {
+  padding-left: 7px;
+}
+
+.nav__menu ul li a {
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+  font-family: "magic";
+}
 
 
 @media only screen and (max-width: 450px) {
-    /* header */
-    header {
-      background-image: url(./images/D3zRU.jpg);
-      height: 380px;
-    }
-  
-    .header__title{
-      font-size: 50px;
-    }
-  
-    .nav__menu ul li a {
-      font-size: 28px;
-    }
-    /* main index */
-    .main__container {
-      margin-top: 30px;
-    }
-    .info__container p {
-      font-size: 17px;
-      padding-top: 10px;
-    }
-}  
-    
+
+  /* header */
+  .header__index {
+    background-image: url(../../images/D3zRU.jpg);
+    height: 380px;
+  }
+
+  .header__title {
+    font-size: 50px;
+  }
+
+  .nav__menu ul li a {
+    font-size: 28px;
+  }
+
+  /* main index */
+  .main__container {
+    margin-top: 30px;
+  }
+
+  .info__container p {
+    font-size: 17px;
+    padding-top: 10px;
+  }
+}
