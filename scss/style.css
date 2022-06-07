@@ -68,15 +68,19 @@ header {
 
 footer {
   background-color: #932B77;
-  display: flex;
-  justify-content: center;
 }
 
 footer .social__media p {
   color: white;
+  text-align: center;
 }
 
-footer .social__media a img {
+footer .social__media-nav {
+  display: flex;
+  justify-content: center;
+}
+
+footer .social__media-nav img {
   width: 55px;
   height: auto;
   padding-right: 10px;
@@ -85,10 +89,11 @@ footer .social__media a img {
 }
 
 @media only screen and (max-width: 450px) {
-  .social__media a img {
+  footer .social__media-nav img {
     width: 45px;
+    padding: none;
   }
-  .social__media p {
+  footer .social__media p {
     font-size: 14px;
     padding-right: 5px;
     padding-left: 5px;
@@ -105,17 +110,17 @@ main {
   margin-top: 60px;
 }
 
-.carousel__info h5 {
+main .carousel__info h5 {
   text-align: center;
   font-size: 45px;
   font-family: "magic";
 }
 
-.info__container {
+main .info__container {
   padding-top: 10px;
 }
 
-.info__container p {
+main .info__container p {
   font-size: 22px;
   line-height: 1.4;
   font-family: "Koulen";
@@ -123,10 +128,10 @@ main {
 }
 
 @media only screen and (max-width: 450px) {
-  .main__container {
+  main .main__container {
     margin-top: 30px;
   }
-  .info__container p {
+  main .info__container p {
     font-size: 17px;
     padding-top: 10px;
   }
@@ -303,7 +308,7 @@ main {
     grid-auto-rows: 1fr;
   }
   .grid__container div img {
-    width: 300px;
+    width: 100%;
   }
   .gallery__title {
     font-size: 50px;
