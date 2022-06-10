@@ -1,35 +1,45 @@
 footer {
   background-color: #932B77;
 
-  .social__media p {
-    color: white;
-    text-align: center; 
+  .social__media {
+    p {
+      color: white;
+      text-align: $center-text;
+    }
+
+    .social__media-nav {
+      display: flex;
+      justify-content: center;
+
+      a {
+        img {
+          width: 55px;
+          height: auto;
+          padding-right: 10px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+    }
   }
 
-  .social__media-nav {
-    display: flex;
-    justify-content: center;
-  }
-
-  .social__media-nav img {
-    width: 55px;
-    height: auto;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
 
   @media only screen and (max-width: 450px) {
-    .social__media-nav img {
-      width: 45px;
-      padding: none;
-    }
-  
-    .social__media p {
-      font-size: 14px;
-      padding-right: 5px;
-      padding-left: 5px;
+    .social__media {
+      p {
+        font-size: 14px;
+        padding-right: 5px;
+        padding-left: 5px;
+      }
+
+      .social__media-nav {
+        a {
+          img {
+            width: 45px;
+            padding: none;
+          }
+        }
+      }
     }
   }
 }
-

@@ -3,66 +3,73 @@
   src: url(../../fonts/HARRYP__.TTF);
 }
 
-.books__title {
-  text-align: center;
-  font-family: "magic";
-  color: black;
-  font-size: 60px;
+.books__container {
+  .books__title {
+    @extend %title_styles;
+  }
+
+  section {
+    .book__container-info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      padding-top: 10px;
+
+      .book__img {
+        width: 300px;
+        height: auto;
+        padding-top: 20px;
+        display: block;
+      }
+
+      .book__text {
+        width: 65%;
+
+        h2 {
+          text-align: $center-text;
+          color: $color-text;
+          font-family: "magic";
+          font-size: 48px
+        }
+
+        p {
+          font-size: $text-size;
+          padding-left: 20px;
+          color: $color-text;
+          font-family: $text-family;
+        }
+      }
+    }
+  }
 }
 
-.book__container-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  padding-top: 10px;
-}
-
-.book__img {
-  width: 300px;
-  height: auto;
-  padding-top: 20px;
-  display: block;
-}
-
-.book__text {
-  width: 65%;
-}
-
-.book__text h2 {
-  text-align: center;
-  color: black;
-  font-family: "magic";
-  font-size: 48px
-}
-
-.book__text p {
-  font-size: 20px;
-  padding-left: 20px;
-  color: black;
-  font-family: 'koulen';
-}
 
 @media only screen and (max-width: 450px) {
-  .book__img {
-    width: 200px;
-   
-  }
-  .book__container-info {
-    flex-direction: column;
-  }
+  .books__container {
+    section {
+      .book__container-info {
+        flex-direction: column;
 
-  .book__text{
-    width: 100%;
-  }
+        .book__img {
+          width: 200px;
+        }
 
-  .book__text p{
-    padding-left: none;
-    font-size: 18px;
-  }
+        .book__text {
+          width: 100%;
 
-  .book__text h2{
-   padding-top: 7px;
-   font-size: 39px;
+          h2 {
+            padding-top: 7px;
+            font-size: 39px;
+          }
+
+          p {
+            padding-left: 0;
+            font-size: 18px;
+          }
+
+        }
+      }
+    }
   }
 }

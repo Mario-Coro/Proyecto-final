@@ -11,16 +11,40 @@ body {
   font-family: "magic";
   src: url(../../fonts/HARRYP__.TTF);
 }
+.gallery__title, main .characters__title, .books__container .books__title {
+  text-align: center;
+  font-family: "magic";
+  color: black;
+  font-size: 60px;
+}
+
 .header__index {
   background-image: url(..//images/HP1_Platform_nine_spread.jpg);
   height: 748px;
+}
+.header__index .nav__menu ul li {
+  padding-left: 7px;
+}
+.header__index .nav__menu ul li a {
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+  font-family: "magic";
 }
 
 header {
   background-color: #932B77;
 }
-
-.header__title {
+header .nav__menu ul li {
+  padding-left: 7px;
+}
+header .nav__menu ul li a {
+  font-size: 40px;
+  text-decoration: none;
+  color: black;
+  font-family: "magic";
+}
+header .header__title {
   font-size: 70px;
   font-family: "magic";
   text-decoration: none;
@@ -31,40 +55,24 @@ header {
   font-family: "magic";
   src: url(../../fonts/HARRYP__.TTF);
 }
-.nav__menu ul li {
-  padding-left: 7px;
-}
-
-.nav__menu ul li a {
-  font-size: 40px;
-  text-decoration: none;
-  color: black;
-  font-family: "magic";
-}
-
 @media only screen and (max-width: 450px) {
   /* header */
   .header__index {
     background-image: url(../../images/D3zRU.jpg);
     height: 380px;
   }
-
-  .header__title {
+  .header__index .header__title {
     font-size: 50px;
   }
-
-  .nav__menu ul li a {
+  .header__index .nav__menu ul li a {
     font-size: 28px;
   }
 
-  /* main index */
-  .main__container {
-    margin-top: 30px;
+  header .header__title {
+    font-size: 50px;
   }
-
-  .info__container p {
-    font-size: 17px;
-    padding-top: 10px;
+  header .nav__menu ul li a {
+    font-size: 28px;
   }
 }
 footer {
@@ -74,11 +82,11 @@ footer .social__media p {
   color: white;
   text-align: center;
 }
-footer .social__media-nav {
+footer .social__media .social__media-nav {
   display: flex;
   justify-content: center;
 }
-footer .social__media-nav img {
+footer .social__media .social__media-nav a img {
   width: 55px;
   height: auto;
   padding-right: 10px;
@@ -86,14 +94,14 @@ footer .social__media-nav img {
   padding-bottom: 10px;
 }
 @media only screen and (max-width: 450px) {
-  footer .social__media-nav img {
-    width: 45px;
-    padding: none;
-  }
   footer .social__media p {
     font-size: 14px;
     padding-right: 5px;
     padding-left: 5px;
+  }
+  footer .social__media .social__media-nav a img {
+    width: 45px;
+    padding: none;
   }
 }
 
@@ -114,9 +122,9 @@ main .info__container {
   padding-top: 10px;
 }
 main .info__container p {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.4;
-  font-family: "Koulen";
+  font-family: "koulen";
   color: black;
 }
 @media only screen and (max-width: 450px) {
@@ -133,40 +141,29 @@ main .info__container p {
   font-family: "magic";
   src: url(../../fonts/HARRYP__.TTF);
 }
-.books__title {
-  text-align: center;
-  font-family: "magic";
-  color: black;
-  font-size: 60px;
-}
-
-.book__container-info {
+.books__container section .book__container-info {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   padding-top: 10px;
 }
-
-.book__img {
+.books__container section .book__container-info .book__img {
   width: 300px;
   height: auto;
   padding-top: 20px;
   display: block;
 }
-
-.book__text {
+.books__container section .book__container-info .book__text {
   width: 65%;
 }
-
-.book__text h2 {
+.books__container section .book__container-info .book__text h2 {
   text-align: center;
   color: black;
   font-family: "magic";
   font-size: 48px;
 }
-
-.book__text p {
+.books__container section .book__container-info .book__text p {
   font-size: 20px;
   padding-left: 20px;
   color: black;
@@ -174,64 +171,51 @@ main .info__container p {
 }
 
 @media only screen and (max-width: 450px) {
-  .book__img {
-    width: 200px;
-  }
-
-  .book__container-info {
+  .books__container section .book__container-info {
     flex-direction: column;
   }
-
-  .book__text {
+  .books__container section .book__container-info .book__img {
+    width: 200px;
+  }
+  .books__container section .book__container-info .book__text {
     width: 100%;
   }
-
-  .book__text p {
-    padding-left: none;
-    font-size: 18px;
-  }
-
-  .book__text h2 {
+  .books__container section .book__container-info .book__text h2 {
     padding-top: 7px;
     font-size: 39px;
+  }
+  .books__container section .book__container-info .book__text p {
+    padding-left: 0;
+    font-size: 18px;
   }
 }
 @font-face {
   font-family: "magic";
   src: url(../../fonts/HARRYP__.TTF);
 }
-.characters__title {
-  text-align: center;
-  font-family: "magic";
-  color: black;
-  font-size: 60px;
+main .characters__title {
   padding-bottom: 15px;
-  /* padding-top: 15px; */
   align-items: center;
 }
-
-.characters__container-card {
+main .characters__container .characters__container-card {
   border: 8px solid black;
 }
-
-.characters__container-card div h5 {
+main .characters__container .characters__container-card div h5 {
   font-family: "magic";
   font-size: 50px;
   text-align: center;
 }
-
-.characters__container-card div p {
+main .characters__container .characters__container-card div p {
   font-family: "koulen";
   font-size: 20px;
   text-align: center;
 }
 
 @media only screen and (max-width: 450px) {
-  .characters__container-card div h5 {
+  main .characters__container .characters__container-card div h5 {
     font-size: 40px;
   }
-
-  .characters__container-card div p {
+  main .characters__container .characters__container-card div p {
     font-size: 18px;
   }
 }
@@ -239,35 +223,30 @@ main .info__container p {
   font-family: "magic";
   src: url(../../fonts/HARRYP__.TTF);
 }
-.author__container {
+main .author__container {
   background-color: #dfdfde;
 }
-
-.author__img {
+main .author__container .author__img {
   padding-top: 100px;
 }
-
-.author__container-info h1 {
+main .author__container .author__container-info h1 {
   font-family: "magic";
   font-size: 60px;
   text-align: center;
 }
-
-.author__container-info p {
+main .author__container .author__container-info p {
   font-family: "koulen";
   font-size: 20px;
 }
 
 @media only screen and (max-width: 450px) {
-  .author__container-info h1 {
+  main .author__container .author__container-info h1 {
     font-size: 42px;
   }
-
-  .author__container-info p {
+  main .author__container .author__container-info p {
     font-size: 18px;
   }
-
-  .author__container-info-p2 {
+  main .author__container .author__container-info .author__container-info-p2 {
     display: none;
   }
 }
@@ -280,7 +259,6 @@ main .info__container p {
   margin: auto;
   padding-top: 20px;
 }
-
 .grid__container div img {
   width: 100%;
   height: 100%;
@@ -288,10 +266,6 @@ main .info__container p {
 }
 
 .gallery__title {
-  text-align: center;
-  font-family: "magic";
-  color: black;
-  font-size: 60px;
   padding-top: 20px;
 }
 
@@ -300,7 +274,6 @@ main .info__container p {
     grid-template-columns: 1fr;
     grid-auto-rows: 1fr;
   }
-
   .grid__container div img {
     width: 100%;
   }

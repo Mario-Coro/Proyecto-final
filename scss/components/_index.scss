@@ -7,22 +7,26 @@ main {
   padding-bottom: 20px;
   margin-top: 60px;
 
-  .carousel__info h5 {
-    text-align: center;
-    font-size: 45px;
-    font-family: "magic";
+  .carousel__info {
+    h5 {
+      text-align: $center-text;
+      font-size: 45px;
+      font-family: "magic";
+    }
   }
+
 
   .info__container {
     padding-top: 10px;
+
+    p {
+      font-size: $text-size;
+      line-height: 1.4;
+      font-family: $text-family;
+      color: $color-text;
+    }
   }
 
-  .info__container p {
-    font-size: 22px;
-    line-height: 1.4;
-    font-family: "Koulen";
-    color: black;
-  }
 
   @media only screen and (max-width: 450px) {
     .main__container {
@@ -34,5 +38,4 @@ main {
       padding-top: 10px;
     }
   }
-
 }

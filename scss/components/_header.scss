@@ -1,33 +1,54 @@
 .header__index {
   background-image: url(..//images/HP1_Platform_nine_spread.jpg);
   height: 748px;
+
+  .nav__menu {
+    ul {
+      li {
+        padding-left: 7px;
+
+        a {
+          font-size: 40px;
+          text-decoration: none;
+          color: $color-text;
+          font-family: "magic";
+        }
+      }
+    }
+  }
 }
 
 header {
   background-color: #932B77;
+
+  .nav__menu {
+    ul {
+      li {
+        padding-left: 7px;
+
+        a {
+          font-size: 40px;
+          text-decoration: none;
+          color: $color-text;
+          font-family: "magic";
+        }
+      }
+    }
+  }
+
+  .header__title {
+    font-size: 70px;
+    font-family: "magic";
+    text-decoration: none;
+    color: $color-text;
+  }
+
 }
 
-.header__title {   
-  font-size: 70px;
-  font-family: "magic";
-  text-decoration: none;
-  color: black;
-}
 
 @font-face {
   font-family: "magic";
   src: url(../../fonts/HARRYP__.TTF);
-}
-
-.nav__menu ul li {
-  padding-left: 7px;
-}
-
-.nav__menu ul li a {
-  font-size: 40px;
-  text-decoration: none;
-  color: black;
-  font-family: "magic";
 }
 
 
@@ -37,23 +58,36 @@ header {
   .header__index {
     background-image: url(../../images/D3zRU.jpg);
     height: 380px;
+
+    .header__title {
+      font-size: 50px;
+    }
+
+    .nav__menu {
+      ul {
+        li {
+          a {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+
   }
 
-  .header__title {
-    font-size: 50px;
-  }
+  header {
+    .header__title {
+      font-size: 50px;
+    }
 
-  .nav__menu ul li a {
-    font-size: 28px;
-  }
-
-  /* main index */
-  .main__container {
-    margin-top: 30px;
-  }
-
-  .info__container p {
-    font-size: 17px;
-    padding-top: 10px;
+    .nav__menu {
+      ul {
+        li {
+          a {
+            font-size: 28px;
+          }
+        }
+      }
+    }
   }
 }

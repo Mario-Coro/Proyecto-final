@@ -1,39 +1,53 @@
 @font-face {
     font-family: "magic";
     src: url(../../fonts/HARRYP__.TTF);
-  }
-.characters__title {
-    text-align: center;
-    font-family: "magic";
-    color: black;
-    font-size: 60px;
-    padding-bottom: 15px;
-    /* padding-top: 15px; */
-    align-items: center;
 }
 
-.characters__container-card {
-    border: 8px solid black;
-}
+main {
+    .characters__title {
+        @extend %title_styles;
+        padding-bottom: 15px;
+        align-items: center;
+    }
 
-.characters__container-card div h5 {
-    font-family: "magic";
-    font-size: 50px;
-    text-align: center;
-}
+    .characters__container {
 
-.characters__container-card div p {
-    font-family: 'koulen';
-    font-size: 20px;
-    text-align: center;
+        .characters__container-card {
+            border: 8px solid $color-text;
+
+            div {
+                h5 {
+                    font-family: "magic";
+                    font-size: 50px;
+                    text-align: $center-text;
+                }
+
+                p {
+                    font-family: $text-family;
+                    font-size: $text-size;
+                    text-align: $center-text;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 450px) {
-    .characters__container-card div h5 {
-        font-size: 40px;
-      }
-    
-      .characters__container-card div p{
-        font-size: 18px;
-      } 
+
+    main {
+        .characters__container {
+            .characters__container-card {
+                div {
+                    h5 {
+                        font-size: 40px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                    }
+                }
+
+            }
+        }
+    }
 }
